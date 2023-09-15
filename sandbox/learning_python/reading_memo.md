@@ -21,7 +21,7 @@ Pythonのインストール方法とかが書かれている
 
 pythonとすると起動する
 
-```
+```python
 $ python
 Python 3.11.5 (main, Aug 26 2023, 08:35:59) [Clang 16.0.3 ] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -33,7 +33,7 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 簡単な掛け算でSyntaxエラーになった。プリントの書き方が今は違うらしい。
 
-```
+```python
 >>> print(2 ** 8)
 256
 >>> 2 ** 8
@@ -44,48 +44,120 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 
 先頭にハッシュバンを書くやり方はRyeでは通じなかった
 
-```
+```shell
 #!/usr/bin/env python
 #!/usr/bin/python
 #!/usr/local/bin/python
 ```
 
 
-II部 ビルトインオブジェクト
+## II部 ビルトインオブジェクト
  
-4章 Pythonのビルトインオブジェクト
-    4.1 ビルトインオブジェクト
-        4.1.1 ビルトインオブジェクトの型
-    4.2 数値
-    4.3 文字列
-        4.3.1 シーケンスの操作
-        4.3.2 不変性
-        4.3.3 文字列に固有のメソッド
-        4.3.4 ヘルプ
-        4.3.5 文字列の作り方のバリエーション
-        4.3.6 パターンマッチング
-    4.4 リスト
-        4.4.1 シーケンス操作
-        4.4.2 リストに固有のメソッド
-        4.4.3 要素の存在チェック
-        4.4.4 ネスト
-        4.4.5 リスト内包表記
-    4.5 ディクショナリ
-        4.5.1 写像の操作
-        4.5.2 ネスト
-        4.5.3 キーのソート：forループ
-        4.5.4 反復処理と最適化
-        4.5.5 存在しないキー：ifテスト
-    4.6 タプル
-        4.6.1 なぜタプルが必要なのか
-    4.7 ファイル
-        4.7.1 ファイル関連ツール
-    4.8 その他の型
-        4.8.1 型のチェック
-        4.8.2 ユーザの作るクラス
-        4.8.3 オブジェクトは他にもある
-    4.9 4章のまとめ
- 4章の練習問題
+### 4章 Pythonのビルトインオブジェクト
+
+#### 4.2 数値
+
+```python
+>>> 123 + 222
+345
+>>> 1.5 * 4
+6.0
+>>> 2 ** 100
+1267650600228229401496703205376
+>>> print 3.14 * 2
+  File "<stdin>", line 1
+    print 3.14 * 2
+    ^^^^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print(3.14 * 2)
+6.28
+>>> import math
+>>> math.pi
+3.141592653589793
+```
+
+#### 4.3 文字列
+
+```python
+>>> S = 'Spam'
+>>> S
+'Spam'
+>>> len(S)
+4
+>>> S[0]
+'S'
+>>> S[-1]
+'m'
+>>> line = 'aaa,bbb,ccc,ddd'
+>>> line.split(',')
+['aaa', 'bbb', 'ccc', 'ddd']
+```
+
+#### 4.4 リスト
+
+```python
+>>> L = [123, 'spam', 1.23]
+>>> L
+[123, 'spam', 1.23]
+>>> L[0]
+123
+>>> L[-1]
+1.23
+>>> L[:-1]
+[123, 'spam']
+>>> L + [4, 5, 6]
+[123, 'spam', 1.23, 4, 5, 6]
+>>> L
+[123, 'spam', 1.23] # リストの中身は更新されていない
+>>> L.append('NY')
+>>> L
+[123, 'spam', 1.23, 'NY'] # 中身が更新
+>>> L.pop(2)
+1.23
+>>> L
+[123, 'spam', 'NY'] # 中身が更新
+
+```
+
+### 4.5 ディクショナリ
+
+```python
+>>> D = {'food': 'Spam', 'color': 'Pink'}
+>>> D
+{'food': 'Spam', 'color': 'Pink'}
+>>> D['color']
+'Pink'
+```
+
+#### 4.6 タプル
+
+```python
+>>> T = (1, 2, 3)
+>>> T[1]
+2
+>>> T[1] = 4
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
+##### 4.6.1 なぜタプルが必要なのか
+
+いったん作ると変更ができない。その普遍性が重要になる時がある。
+
+#### 4.8 その他の型
+
+型の確認
+
+```python
+>>> type(L)
+<class 'list'>
+>>> isinstance(L, list)
+True
+>>> type(T)
+<class 'tuple'>
+>>> type(S)
+<class 'str'>
+```
 
 5章 数値
     5.1 数値
