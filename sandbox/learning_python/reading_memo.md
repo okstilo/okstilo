@@ -403,34 +403,76 @@ yes
 false
 ```
 
-13章 whileループとforループ
-    13.1 whileループ
-        13.1.1 whileステートメントの形式
-        13.1.2 whileステートメントの使用例
-    13.2 break、continue、passステートメントとelseブロック
-        13.2.1 break、continueステートメントやelseブロックを含むwhileループの形式
-        13.2.2 break、continue、passステートメントやelseブロックを含むwhileループの使用例
-    13.3 forループ
-        13.3.1 forステートメントの形式
-        13.3.2 forループの使用例
-    13.4 反復処理
-        13.4.1 ファイルを対象とした反復処理
-        13.4.2 他のオブジェクトへの反復処理
-        13.4.3 forループ以外での反復処理
-        13.4.4 ユーザ定義の関数やクラスを反復処理に対応させる
-    13.5 特殊なforループ
-        13.5.1 range関数の利用
-        13.5.2 シーケンスへの変則的なアクセスへのrange関数の利用
-        13.5.3 シーケンスを更新するforループ
-        13.5.4 zip関数の利用
-        13.5.5 インデックスと要素を生成する：enumerate関数
-    13.6 リスト内包表記の概要
-        13.6.1 リスト内包表記の基礎
-        13.6.2 リスト内包表記をファイルに対して使用する
-        13.6.3 リスト内包表記の拡張構文
-    13.7 13章のまとめ
- 13章の練習問題
-14章 Pythonのドキュメント
+### 13章 whileループとforループ
+
+#### 13.1 whileループ
+
+```python
+x = 10
+while x:
+  x = x -1
+  if x % 2 == 0:
+    print x
+
+8
+6
+4
+2
+0
+```
+
+#### 13.3 forループ
+
+```python
+sum = 0
+for x in [1, 2, 3, 4]:
+  sum = sum + x
+  print sum
+
+1
+3
+6
+10
+```
+
+#### 13.5.3 シーケンスを更新するforループ
+
+ ```python
+ L = [1, 2, 3, 4, 5]
+for i in range(len(L)):
+  L[i] += 1
+
+print L
+
+[2, 3, 4, 5, 6]
+ ```
+
+#### 13.5.5 インデックスと要素を生成する：enumerate関数
+
+```python
+S = 'spam'
+for (offset, item) in enumerate(S):
+  print item, 'appers at offset', offset
+
+s appers at offset 0
+p appers at offset 1
+a appers at offset 2
+m appers at offset 3
+```
+
+ #### 13.6 リスト内包表記の概要
+
+```python
+>>> L
+[1, 2, 3, 4, 5]
+>>> L = [x + 10 for x in L] # ワンラインで書けてしまう！
+>>> L
+[11, 12, 13, 14, 15]
+```
+
+### 14章 Pythonのドキュメント
+
+
     14.1 ドキュメントについての基礎知識
         14.1.1 ドキュメントの種類
         14.1.2 # を使用したコメント
