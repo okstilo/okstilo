@@ -19,3 +19,6 @@ dev-dependencies = []
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[tool.rye.scripts]
+helloworld = "python src/learning_python/helloworld.py"
