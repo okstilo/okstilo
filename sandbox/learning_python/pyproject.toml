@@ -21,4 +21,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.rye.scripts]
-helloworld = "python src/learning_python/helloworld.py"
+helloworld = "python src/helloworld.py"
