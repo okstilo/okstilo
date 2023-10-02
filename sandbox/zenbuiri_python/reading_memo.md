@@ -18,7 +18,8 @@ Pythonの基本的な使い方などの説明
 
 ## Chapter 5　ファイルの操作と圧縮・展開
 
-
+Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
+`src/chapter05` にサンプルファイルを写経した
 
 ## Chapter 6　画像の加工
 
