@@ -23,8 +23,15 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 ## Chapter 6　画像の加工
 
+Pillow（ `PIL` ）を使って画像を扱うやり方
 
 ## Chapter 7　CSVファイルの処理
+
+<!-- 先にやる -->
+
+- `pandas` を使ってCSVの読み込み書き込み
+- jsonからcsvへの変換
+- あと、細々としたところの説明
 
 
 ## Chapter 8　テキストデータの処理
