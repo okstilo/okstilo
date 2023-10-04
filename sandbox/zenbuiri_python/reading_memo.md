@@ -23,7 +23,7 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 ## Chapter 6　画像の加工
 
-Pillow（ `PIL` ）を使って画像を扱うやり方
+- [ ] Pillow（ `PIL` ）を使って画像を扱うやり方
 
 ## Chapter 7　CSVファイルの処理
 
@@ -35,6 +35,13 @@ Pillow（ `PIL` ）を使って画像を扱うやり方
 
 
 ## Chapter 8　テキストデータの処理
+
+- textの読み出しと加工
+- 正規表現の使い方
+  - htmlタグを取り除く
+- [ ] PDFからテキスト抽出
+- [ ] Markdown形式のドキュメントをHTMLに変換する
+- [ ] テキストから重要語句を抜き出す
 
 
 ## Chapter 9　Microsoft Excelとの連携
