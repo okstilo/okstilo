@@ -7,8 +7,13 @@
 #   all-features: false
 
 -e file:.
+cffi==1.16.0
+charset-normalizer==3.3.0
+cryptography==41.0.4
 numpy==1.26.0
 pandas==2.1.1
+pdfminer-six==20221105
+pycparser==2.21
 python-dateutil==2.8.2
 pytz==2023.3.post1
 six==1.16.0
