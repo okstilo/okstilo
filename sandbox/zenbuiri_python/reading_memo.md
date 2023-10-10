@@ -51,11 +51,8 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 ## Chapter 9　Microsoft Excelとの連携
 
-- Excelが無いので自宅Macではできない。。。
-  - [x] 自宅Mac用のOffice365を購入した
 
 ## Chapter 10　Webスクレイピング
-
 
 
 ## Chapter 11　Web API
