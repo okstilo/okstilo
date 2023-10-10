@@ -51,9 +51,13 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 ## Chapter 9　Microsoft Excelとの連携
 
+- Excelが無いので自宅Macではできない。。。
+  - [x] 自宅Mac用のOffice365を購入した
 
 ## Chapter 10　Webスクレイピング
 
+- WEBページが要素を取り出す
+  - 例題のimpressのページはSSLが通らなかったのでWikipediaで試した
 
 ## Chapter 11　Web API
 
