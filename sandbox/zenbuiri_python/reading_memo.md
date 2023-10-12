@@ -58,11 +58,18 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 - WEBページが要素を取り出す
   - 例題のimpressのページはSSLが通らなかったのでWikipediaで試した
-- [x] 画像を取得
+- 画像を取得
   - alt属性がなかったので、適当に番号をつけて保存した
   - imgの保存方法がおかしいのかDLされたものはプレビューで表示できなかった
 - [ ] WEBブラウザを操作
-- [ ] RSSフィードを受信
+  - supports Chrome version 118 Current browser version is 117.0.5938.149
+  - chrome driver のサポートバージョンとインストール済みのブラウザーのバージョンが一致せず、使えず
+- [x] RSSフィードを受信
+  - 気象庁のニュースのサマリーを取得した。簡単で便利な感じがした
 
 ## Chapter 11　Web API
+
+- Google suiteを使う準備
+- [ ] Google スプレッドシートを使う
+- [ ] Google カレンダーを使う
 
