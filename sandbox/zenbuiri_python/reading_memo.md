@@ -51,8 +51,8 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 
 ## Chapter 9　Microsoft Excelとの連携
 
-- Excelが無いので自宅Macではできない。。。
-  - [x] 自宅Mac用のOffice365を購入した
+- `openpyxl` を導入した
+- ワークブック、ワークシート、セルのそれぞれの読み込みした
 
 ## Chapter 10　Webスクレイピング
 
@@ -64,7 +64,7 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 - [ ] WEBブラウザを操作
   - supports Chrome version 118 Current browser version is 117.0.5938.149
   - chrome driver のサポートバージョンとインストール済みのブラウザーのバージョンが一致せず、使えず
-- [x] RSSフィードを受信
+- RSSフィードを受信
   - 気象庁のニュースのサマリーを取得した。簡単で便利な感じがした
 
 ## Chapter 11　Web API
