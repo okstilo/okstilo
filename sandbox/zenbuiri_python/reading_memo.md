@@ -64,15 +64,22 @@ Pythonの `zipfile` を使ってZipファイルの圧縮・解答をやる
 - 画像を取得
   - alt属性がなかったので、適当に番号をつけて保存した
   - imgの保存方法がおかしいのかDLされたものはプレビューで表示できなかった
-- [ ] WEBブラウザを操作
-  - supports Chrome version 118 Current browser version is 117.0.5938.149
-  - chrome driver のサポートバージョンとインストール済みのブラウザーのバージョンが一致せず、使えず
+- WEBブラウザを操作
+  - 対話モードでChromeを起動してYahooにアクセスできた
+  - Chromeでアクセスした先のCSSを指定してスクショを保存できた
+    - 一部、メソッドが変わっていたので対応した
 - RSSフィードを受信
   - 気象庁のニュースのサマリーを取得した。簡単で便利な感じがした
 
+```python
+>>> from selenium import webdriver
+>>> driver = webdriver.Chrome()
+>>> driver.get("https://www.yahoo.co.jp")
+```
+
 ## Chapter 11　Web API
 
-- Google suiteを使う準備
-- [ ] Google スプレッドシートを使う
-- [ ] Google カレンダーを使う
+Googleの認証周りがめんどくさそうなので、使えるところを読むだけにした
 
+
+以上。
