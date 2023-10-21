@@ -31,8 +31,9 @@ $ psql -l
 
 ## 第1章　データベースとSQL
 
-
-
+- [TablePlus](https://tableplus.com) を導入した。課金してもいいぐらい使いやすい
+- SQLをサクサク書けて便利
+- `Shohin` テーブルを作成した
 
 ## 第2章　検索の基本
 
