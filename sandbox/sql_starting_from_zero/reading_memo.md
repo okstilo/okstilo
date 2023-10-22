@@ -34,6 +34,9 @@ $ psql -l
 - [TablePlus](https://tableplus.com) を導入した。課金してもいいぐらい使いやすい
 - SQLをサクサク書けて便利
 - `Shohin` テーブルを作成した
+- `Shohin` にデータ登録した
+  - TablePlusは1行ずつ実行されるのでRun Allしないといけない
+  - VS Codeでマルチカーソルを使いたかったのでSQL文 `list_1_6.sql` 作成した
 
 ## 第2章　検索の基本
 
