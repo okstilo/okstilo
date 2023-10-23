@@ -40,7 +40,11 @@ $ psql -l
 
 ## 第2章　検索の基本
 
-
+- TablePlusの[autocomplete](https://docs.tableplus.com/query-editor/autocomplete)機能が便利
+  - From句で指定するテーブル名に略称をつけると、ドット構文でカラム名がサジェストされる
+- SELECT文
+- 算術演算子、比較演算子
+- 論理演算子
 
 ## 第3章　集約と並べ替え
 
