@@ -48,7 +48,33 @@ $ psql -l
 
 ## 第3章　集約と並べ替え
 
-- [ ] 間違えて先に4章をやってしまった
+- 行数 count
+- 合計 sum
+  - null行は含まれず計算される
+- 平均値 avg
+  - null行は母数に含まれず計算される
+- 最大値 max, 最小値 min
+- 重複値を外して集約関数を使う DISTINCT（でぃすてぃんくと）
+- グループに切り分ける GROUP BY
+  - nullはnullというグループで切り分けられる
+  - where句と併用したときは以下の実行順序
+    - from -> where -> group by -> select
+  - select句に集約キー以外の列名（group byで使う列名以外）は使えない
+- having 集約した結果を条件指定する
+  - having句：グループに対する条件指定
+  - where句：行に対する条件指定（行数を絞り込むため実行速度が速い
+- 並べ替え order by
+  - デフォで昇順 `ASC` 、降順は `DESC` を指定する
+  - nullは先頭か末尾にまとめて表示される
+
+### 記述順序
+
+1. select
+2. from
+3. where
+4. group by
+5. having
+6. order by
 
 ## 第4章　データの更新
 
