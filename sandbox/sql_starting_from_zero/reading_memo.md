@@ -122,7 +122,42 @@ $ psql -l
 
 ## 第6章　関数、述語、CASE式
 
-
+- いろいろな関数
+  - 算術関数
+    - 四則演算
+    - ABS 絶対値
+    - MOD 剰余
+    - ROUND 四捨五入
+  - 文字列関数
+    - || 連結
+    - LENGTH 文字列長
+    - LOWER/UPPER 小文字化/大文字化
+    - REPLACE 置換
+    - SUBSTRUNG 切り出し
+  - 日付関数
+    - CURRENT_DATE 日付
+    - CURRENT_TIME 時間
+    - CURRENT_TIMESTAMP 日時
+    - EXTRACT 日付の切り出し
+  - 変換関数
+    - CAST 型変換
+    - COALESCE（コアレス）Nullを値へ変換
+  - 集約関数
+    - COUNT, SUM, AVG, MAX, MIN
+- 述語
+  - LIKE 文字列の部分一致
+    - 前方一致、中間一致、後方一致
+  - BETWEEN 範囲検索
+    - 以上以下（指定した値も含む）
+  - IS NULL, IS NOT NULL NULL判定
+  - IN ORの省略形
+    - IN (1, 20, 300) いずれかが含むか
+    - INの条件にサブクエリを含ませる
+  - EXISTS（イグジスツ）
+    - ある条件に一致するものがあるかどうか
+- CASE式
+  - プログラミングのSwitch文のようなもの
+  - まとめて AS で名付けて出力することもできる
 
 ## 第7章　集合演算
 
