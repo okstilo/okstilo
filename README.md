@@ -18,7 +18,6 @@
 ### main
 
 <img alt="my skills" src="https://skillicons.dev/icons?theme=dark&i=swift,ruby,rails" />
-<br>
 
 ### sub
 
